@@ -60,11 +60,20 @@ $articles = [
     ]
 ];
 
+$icons = [
+    'graduation' => 'fas fa-graduation-cap',
+    'laptop' => 'fas fa-laptop-code',
+    'clock' => 'fas fa-clock',
+    'heart' => 'fas fa-heart',
+    'globe' => 'fas fa-globe',
+    'book' => 'fas fa-book'
+];
+
 ?>
 
 <div class="hero-section">
     <div class="container">
-        <h1>Artikel & Berita Sekolah</h1>
+        <h1>Artikel & berita sekolah</h1>
         <p>Dapatkan informasi terbaru, tips belajar, dan wawasan pendidikan yang bermanfaat untuk perkembangan akademik Anda</p>
     </div>
 </div>
@@ -75,35 +84,35 @@ $articles = [
             <h2>Artikel Terbaru</h2>
             <p>Jelajahi koleksi artikel kami yang informatif dan inspiratif</p>
         </div>
-            <div class="articles-grid" id="articlesGrid">
-        <?php foreach ($articles as $a): ?>
-            <div class="article-card"
-                data-title="<?= strtolower($a['title']) ?>"
-                data-category="<?= strtolower($a['category']) ?>">
+        <div class="articles-grid" id="articlesGrid">
+    <?php foreach ($articles as $a): ?>
+        <div class="article-card"
+            data-title="<?= strtolower($a['title']) ?>"
+            data-category="<?= strtolower($a['category']) ?>">
 
-                <div class="article-image">
-                    <i class="<?= $icons[$a['image']] ?? $icons['book'] ?>"></i>
-                </div>
+            <div class="article-image">
+                <i class="<?= $icons[$a['image']] ?? $icons['book'] ?>"></i>
+            </div>
 
-                <div class="article-content">
-                    <span class="article-category"><?= $a['category'] ?></span>
-                    <h3 class="article-title"><?= $a['title'] ?></h3>
-                    <p class="article-excerpt"><?= $a['excerpt'] ?></p>
+            <div class="article-content">
+                <span class="article-category"><?= $a['category'] ?></span>
+                <h3 class="article-title"><?= $a['title'] ?></h3>
+                <p class="article-excerpt"><?= $a['excerpt'] ?></p>
 
-                    <div class="article-meta">
-                        <div class="article-date">
-                            <i class="far fa-calendar"></i>
-                            <span><?= $a['date'] ?></span>
-                        </div>
-
-                        <a href="detail_article.php?id=<?= $a['id'] ?>" class="read-more">
-                            Baca Selengkapnya <i class="fas fa-arrow-right"></i>
-                        </a>
+                <div class="article-meta">
+                    <div class="article-date">
+                        <i class="far fa-calendar"></i>
+                        <span><?= $a['date'] ?></span>
                     </div>
+
+                    <a href="detail_article.php?id=<?= $a['id'] ?>" class="read-more">
+                        Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-        <?php endforeach; ?>
         </div>
+    <?php endforeach; ?>
+    </div>
 
     </div>
 </div>
