@@ -258,6 +258,12 @@ body {
     gap: 10px;
 }
 
+
+.carousel-item img {
+  height: 420px;        
+  object-fit: cover;     
+}
+
 /* Article Detail Page */
 .article-detail {
     max-width: 900px;
