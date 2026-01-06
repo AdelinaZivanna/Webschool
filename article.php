@@ -9,8 +9,7 @@ $articles = [
         'title' => 'Tips Belajar Efektif untuk Ujian Nasional',
         'category' => 'Pendidikan',
         'excerpt' => 'Pelajari strategi dan teknik belajar yang efektif untuk menghadapi ujian nasional dengan percaya diri dan mendapatkan hasil terbaik.',
-        'date' => '15 Januari 2024',
-        'author' => 'admin1',
+           'author' => 'admin1',
         'image' => 'graduation'
     ],
     [
@@ -18,8 +17,7 @@ $articles = [
         'title' => 'Peran Teknologi dalam Pendidikan Modern',
         'category' => 'Teknologi',
         'excerpt' => 'Eksplorasi bagaimana teknologi digital mengubah cara kita belajar dan mengajar di era modern ini.',
-        'date' => '12 Januari 2024',
-        'author' => 'admin2',
+           'author' => 'admin2',
         'image' => 'laptop'
     ],
     [
@@ -27,8 +25,7 @@ $articles = [
         'title' => 'Cara Mengelola Waktu Belajar dengan Baik',
         'category' => 'Tips & Trik',
         'excerpt' => 'Panduan lengkap untuk mengatur waktu belajar agar lebih produktif dan efisien dalam mencapai tujuan akademik.',
-        'date' => '10 Januari 2024',
-        'author' => 'admin3',
+         'author' => 'admin3',
         'image' => 'clock'
     ],
     [
@@ -36,8 +33,7 @@ $articles = [
         'title' => 'Pentingnya Pendidikan Karakter di Sekolah',
         'category' => 'Pendidikan',
         'excerpt' => 'Memahami pentingnya pendidikan karakter dalam membentuk kepribadian siswa yang baik dan berakhlak mulia.',
-        'date' => '8 Januari 2024',
-        'author' => 'admin4',
+         'author' => 'admin4',
         'image' => 'heart'
     ],
     [
@@ -45,8 +41,7 @@ $articles = [
         'title' => 'Belajar Online: Kelebihan dan Tantangannya',
         'category' => 'Teknologi',
         'excerpt' => 'Analisis mendalam tentang pembelajaran online, termasuk kelebihan, kekurangan, dan cara mengoptimalkannya.',
-        'date' => '5 Januari 2024',
-        'author' => 'admin5',
+         'author' => 'admin5',
         'image' => 'globe'
     ],
     [
@@ -54,8 +49,7 @@ $articles = [
         'title' => 'Strategi Menghadapi Stress Saat Ujian',
         'category' => 'Tips & Trik',
         'excerpt' => 'Tips praktis untuk mengelola stress dan kecemasan saat menghadapi ujian agar tetap tenang dan fokus.',
-        'date' => '3 Januari 2024',
-        'author' => 'adm',
+            'author' => 'adm',
         'image' => 'meditation'
     ]
 ];
@@ -101,10 +95,7 @@ $icons = [
 
                 <div class="article-meta">
                     <div class="article-date">
-                        <i class="far fa-calendar"></i>
-                        <span><?= $a['date'] ?></span>
-                    </div>
-
+                       </div>
                     <a href="detail_article.php?id=<?= $a['id'] ?>" class="read-more">
                         Baca Selengkapnya <i class="fas fa-arrow-right"></i>
                     </a>

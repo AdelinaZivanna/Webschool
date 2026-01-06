@@ -2,8 +2,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3><i class="fas fa-graduation-cap"></i> Webschool</h3>
-                    <p>Platform edukasi terdepan untuk pembelajaran yang lebih baik dan menyenangkan.</p>
+                    <h3><i class="fas fa-graduation-cap"></i>KURMASCHOOL</h3>
                     
                 </div>
                 <div class="footer-section">
@@ -23,37 +22,10 @@
                         <li><a href="#">Berita</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Kontak</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> info@webschool.com</li>
-                        <li><i class="fas fa-phone"></i> +62 123 456 789</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
-                    </ul>
-                </div>
-            </div>
+             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        if (hamburger) {
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-        }
-
-        // Close menu when clicking on a link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-    </script>
+  
 </body>
 </html>
