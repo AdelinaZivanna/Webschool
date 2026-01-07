@@ -148,6 +148,22 @@ include 'inc/functions.php';
         </div>
     </div>
     <div class="container pb-5">
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0 text-center">
+
+                <img src="<?php echo get_galery_by_id(1, 'gambar'); ?>"
+                    class="img-fluid w-100 rounded">
+
+                <h5 class="mt-3 text-white">
+                    <?php echo get_galery_by_id(1, 'judul'); ?>
+                </h5>
+
+            </div>
+            </div>
+        </div>
+        </div>
         <div class="row pb-3 align-items-top">
             <div class="col-xxl-5 col-lg-6 mb-3 mb-lg-4">
                 <div class="bg-dark text-white p-3 rounded">
@@ -155,13 +171,13 @@ include 'inc/functions.php';
                     <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="<?php echo get_galery_by_id(1); ?>" class="d-block w-100 rounded" alt="...">
+                                <img src="<?php echo get_galery_by_id(1, 'gambar'); ?>" class="d-block w-100 rounded img-fluid"" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#imageModal" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo get_galery_by_id(2); ?>" class="d-block w-100 rounded" alt="...">
+                                <img src="<?php echo get_galery_by_id(2, 'gambar'); ?>" class="d-block w-100 rounded img-fluid"" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#imageModal2" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="<?php echo get_galery_by_id(3); ?>" class="d-block w-100 rounded" alt="...">
+                                <img src="<?php echo get_galery_by_id(3, 'gambar'); ?>" class="d-block w-100 rounded img-fluid"" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#imageModal3" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">

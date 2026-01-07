@@ -7,10 +7,10 @@ function get_galery(){
         return $get;
     }
 
-    function get_galery_by_id($id) {
+    function get_galery_by_id($id, $column) {
         global $db;
         $db->where ("id", $id);
         $get = $db->getOne ("`galeri`");
-        return $get['gambar'];
+        return $get[$column];
     }
 ?>
