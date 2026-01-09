@@ -31,7 +31,7 @@ $articles = getAllArticle();
             </div>
         <?php else: ?>
             <div class="articles-grid">
-                <?php foreach ($articles as $a): ?>
+                <?php foreach ($articles as $a) { ?>
                     <div class="article-card">
                         <?php if (!empty($a['gambar'])): ?>
                             <div class="article-image">
@@ -64,7 +64,7 @@ $articles = getAllArticle();
                             </div>
                         </div>
                     </div>
-                <?php endforeach; ?>
+                <?php }; ?>
             </div>
         <?php endif; ?>
     </div>

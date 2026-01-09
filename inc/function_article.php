@@ -3,7 +3,7 @@
 
 function getAllArticle() {
     global $db;
-    $get = $db->orderBy('tanggal', 'DESC')->get('artikel');
+    $get = $db->orderBy('id', 'DESC')->get('artikel');
     return $get;
    }
 
@@ -14,7 +14,7 @@ function getArticleById($articles)
         $id = $_GET['id'];
     }
 
-    $article = $articles[1];
+    $article = $articles[0];
     if (isset($articles[$id])) {
         $article = $articles[$id];
     }
