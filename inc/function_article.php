@@ -1,16 +1,25 @@
 <?php
    require_once 'config.php';
 
-   function getAllArticle() {
+function getAllArticle() {
     global $db;
     $get = $db->orderBy('tanggal', 'DESC')->get('artikel');
     return $get;
    }
 
-   function getArticleById($id) {
-    global $db;
-    $db->where('id', $id);
-    return $db->getOne('artikel');
+function getArticleById($articles)
+{
+    $id = 0;
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
+    }
+
+    $article = $articles[1];
+    if (isset($articles[$id])) {
+        $article = $articles[$id];
+    }
+
+    return $article;
 }
 
    
