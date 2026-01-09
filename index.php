@@ -62,7 +62,7 @@ include 'inc/functions.php';
         <div class="carousel-inner">
             <?php foreach(get_homepage() as $index => $row) : ?>
                 <div class="carousel-item <?= $index === 0 ? 'active' : ''; ?>">
-                    <img src="<?= $row['gambar']; ?>"
+                    <img src="assets/image/<?= htmlspecialchars($row['gambar']) ?>"
                         class="d-block w-100 rounded img-fluid"
                         alt="...">
                 </div>
@@ -165,9 +165,9 @@ include 'inc/functions.php';
                         <div class="carousel-inner">
                             <?php foreach(get_galery() as $index => $row) : ?>
                                 <div class="carousel-item <?= $index === 0 ? 'active' : ''; ?>">
-                                    <img src="<?= $row['gambar']; ?>"
+                                    <img src="assets/image/<?= htmlspecialchars($row['gambar']) ?>"
                                         class="d-block w-100 rounded img-fluid"
-                                        alt="<?= htmlspecialchars($row['judul']); ?>">
+                                        alt="assets/image/<?= htmlspecialchars($row['judul']) ?>">
                                 </div>
                             <?php endforeach; ?>
                         </div>
