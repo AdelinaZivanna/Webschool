@@ -180,14 +180,16 @@ include 'inc/functions.php';
             </div>
             <div class="col-xxl-7 col-lg-6 mb-3 mb-lg-4">
                 <div class="h5 text-uppercase">Artikel &amp; Kegiatan Sekolah</div>
+                <?php foreach (get_article() as $row) : ?>
                 <div class="d-flex py-3 border-bottom">
-                    <div class="me-3 me-lg-4"><img src="https://naevaschool.naevaweb.my.id/userfiles/uploads/img-edukasi-57.jpg" class="rounded" alt="..." width="64"></div>
+                    <div class="me-3 me-lg-4"><img src=<?php echo $row['gambar']; ?> class="rounded" alt="..." width="64"></div>
                     <div>
-                        <div><a href="#" class="text-decoration-none text-dark">Jadwal Pendaftaran Seleksi Ujian PPDB</a></div>
-                        <div class="small text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div><a href="#" class="text-decoration-none text-dark"><?php echo $row['judul']; ?></a></div>
+                        <div class="small text-secondary"><?php echo $row['isi']; ?></div>
                     </div>
                 </div>
-                <div class="d-flex py-3 border-bottom">
+                <?php endforeach; ?>
+                <!-- <div class="d-flex py-3 border-bottom">
                     <div class="me-3 me-lg-4"><img src="https://naevaschool.naevaweb.my.id/userfiles/uploads/img-edukasi-64.jpg" class="rounded" alt="..." width="64"></div>
                     <div>
                         <div><a href="#" class="text-decoration-none text-dark">Partisipasi dan Keterlibatan Orang Tua dalam kegiatan sekolah</a></div>
@@ -214,7 +216,7 @@ include 'inc/functions.php';
                         <div><a href="#" class="text-decoration-none text-dark">Partisipasi dan Keterlibatan Orang Tua dalam kegiatan sekolah</a></div>
                         <div class="small text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                     </div>
-                </div>
+                </div> -->
                 <div class="pt-3">
                 <button type="button" class="btn btn-dark btn-sm"
                 onclick="window.location.href='article.php'">
