@@ -32,6 +32,7 @@
                             <li><a class="dropdown-item" href="#">Kegiatan Wali Murid</a></li>
                             <li><a class="dropdown-item" href="#">Pengumuman</a></li>
                             <li><a class="dropdown-item" href="#">Update Prestasi</a></li>
+                            <li><a class="dropdown-item" href="add_article.php">Upload Article</a></li>   
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link text-dark" href="contact-us.php">Kontak Kami</a></li>
