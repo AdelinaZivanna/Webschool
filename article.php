@@ -6,7 +6,7 @@ $pageTitle = "Artikel";
 include 'inc/header.php';
 include 'inc/function_article.php';
 
-$articles = uhiha();
+$articles = getAllArticle();
 
 ?>
 

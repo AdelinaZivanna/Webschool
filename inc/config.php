@@ -1,6 +1,6 @@
 <?php
 
-require_once ('MysqliDb.php');
+require_once ('MysqliDB.php');
 
 $db = new MysqliDb([
     'host' => 'localhost',

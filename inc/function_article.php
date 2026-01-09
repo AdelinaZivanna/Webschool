@@ -1,7 +1,7 @@
 <?php
    require_once 'config.php';
 
-   function uhiha () {
+   function getAllArticle() {
     global $db;
     $get = $db->orderBy('tanggal', 'DESC')->get('artikel');
     return $get;
